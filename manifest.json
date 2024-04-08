@@ -1,0 +1,130 @@
+{
+	"_version": "1.15.0",
+	"sap.app": {
+		"id": "ns.winning_product_create",
+		"type": "card",
+		"title": "Product create",
+		"subTitle": "create product",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+        "deviceTypes": {"desktop": true, "phone": true, "tablet": true},
+		"icons": {
+			"icon": "sap-icon://switch-classes"
+		}
+	},
+	"sap.card": {
+		"type": "Object",
+		"configuration": {
+			"actionHandlers": {
+				"submit": {
+					
+				}
+			}
+		},
+		"data": {
+			
+		},
+		"header": {
+			"title": "Create Product"
+		},
+		"content": {
+			"groups": [
+				{
+					"alignment": "Stretch",
+					"items": [
+						{
+							"id": "name",
+							"label": "Product Name",
+							"type": "Input",
+							"validations": [
+								{
+									"required": true
+								}
+							]
+						},
+						{
+							"id": "sku",
+							"label": "Product SKU",
+							"type": "Input",
+							"validations": [
+								{
+									"required": true
+								}
+							]
+						},
+						{
+							"id": "weight",
+							"label": "Weight",
+							"type": "Input",
+							"placeholder" : "KG",
+							"validations": [
+								{
+									"required": true
+								}
+							]
+						},
+						{
+							"id": "height",
+							"label": "Height",
+							"type": "Input",
+							"placeholder" : "CM",
+							"validations": [
+								{
+									"required": true
+								}
+							]
+						},
+						{
+							"id": "width",
+							"label": "Width",
+							"type": "Input",
+							"placeholder" : "CM",
+							"validations": [
+								{
+									"required": true
+								}
+							]
+						},
+						{
+							"id": "length",
+							"label": "Length",
+							"type": "Input",
+							"placeholder" : "CM",
+							"validations": [
+								{
+									"required": true
+								}
+							]
+						},
+						{
+							"id": "description",
+							"label": "Long Description",
+							"type": "TextArea",
+							"rows": 4
+						}
+					]
+				}
+			]
+		},
+		"footer": {
+			"actionsStrip": [
+				{
+					"text": "Submit",
+					"buttonType": "Accept",
+					"actions": [
+						{
+							"type": "Submit"
+						}
+					]
+				}
+			]
+		}
+	},
+    "sap.platform.mobilecards": {
+        "compatible": false
+    }
+}
